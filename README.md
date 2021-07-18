@@ -27,17 +27,16 @@ python train.py
 make sure  that the GPU memory is enough (the original training is conducted on a one NVIDIA RTX 2080Ti (11G) card with the batch size of 24).
 
 ## test
-After the preparation, run this commond
+After the preparation, run this commond to generate saliency maps
 ```
  python test.py 
 ```
 
-We provide the trained model file ([Google drive](https://drive.google.com/open?id=1YKkzYzZu12314CbGs0zVQwRQ-z8_ounUgYb0d)), and run this command to check its completeness:
+We provide the trained model file ([Baidu drive](https://pan.baidu.com/s/1KdP0doBCiIme4y_j4Y4OPQ code:uht6), and run this command to check its completeness:
 ```
 cksum model-20210718 
 ```
 you will obtain the result `model-20210718 `.
-The saliency maps are also available ([Google drive](https://drive.google.com/open?id=19fkcf1123F8BUmLwjYqqDMuVcFGhMGCBnzE)). 
 
 ## evaluation
 We provide the evaluation code in the folder  "eval_code" for fair comparisons. You may need to revise the `algorithms` , `data_root`, and `maps_root` defined in the `main.m`. 
