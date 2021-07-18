@@ -15,8 +15,8 @@ code：fv6m)) of ResNet-50 implemented in Pytorch if you want to train the netwo
 - download or put the RGB saliency benchmark datasets ([Baidu drive](https://pan.baidu.com/s/1kUPZGSe1CN4AOVmB3R3Qxg 
 code：sfx6)) in the folder of `dataset` for training or test.
 
-## generate the edge mask
-After preparing the data folder, you need to use the edge_mask.py to generate the edge mask for training. Run this command
+## generate the thicker edge mask
+After preparing the data folder, you need to use the edge_mask.py to generate the thicker edge mask for training. Run this command
 ```
 python edge_mask.py
 ```
