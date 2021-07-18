@@ -13,7 +13,7 @@ OpenCV-Python
 - download the official pretrained model ([Baidu drive](https://pan.baidu.com/s/1zRhAaGlunIZEOopNSxZNxw 
 code：fv6m)) of ResNet-50 implemented in Pytorch if you want to train the network again.
 - download or put the RGB saliency benchmark datasets ([Baidu drive](https://pan.baidu.com/s/1kUPZGSe1CN4AOVmB3R3Qxg 
-code：sfx6)) in the folder of `data` for training or test.
+code：sfx6)) in the folder of `dataset` for training or test.
 
 ## generate the edge mask
 After preparing the data folder, you need to use the edge_mask.py to generate the edge mask for training. Run this command
