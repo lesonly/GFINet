@@ -16,28 +16,28 @@ OpenCV-Python
 ## generate the edge mask
 After preparing the data folder, you need to use the edge_mask.py to generate the edge mask for training. Run this command
 ```
-python3 edge_mask.py
+python edge_mask.py
 ```
 
 ## training
 you may revise the `TAG` and `SAVEPATH` defined in the *train.py*. After the preparation, run this command 
 ```
-python3 train.py
+python train.py
 ```
-make sure  that the GPU memory is enough (the original training is conducted on a NVIDIA RTX (24G) card with the batch size of 32).
+make sure  that the GPU memory is enough (the original training is conducted on a one NVIDIA RTX 2080Ti (11G) card with the batch size of 24).
 
 ## test
 After the preparation, run this commond
 ```
- python3 test.py model/model-xxxxx.pt
+ python test.py 
 ```
 
 We provide the trained model file ([Google drive](https://drive.google.com/open?id=1YKkzYzZu12314CbGs0zVQwRQ-z8_ounUgYb0d)), and run this command to check its completeness:
 ```
-cksum model-100045448.pt 
+cksum model-20210718 
 ```
-you will obtain the result `100045448 268562671 model_100045448.pt`.
+you will obtain the result `model-20210718 `.
 The saliency maps are also available ([Google drive](https://drive.google.com/open?id=19fkcf1123F8BUmLwjYqqDMuVcFGhMGCBnzE)). 
 
 ## evaluation
-We provide the evaluation code in the folder  "eval_code" for fair comparisons. You may need to revise the `algorithms` , `data_root`, and `maps_root` defined in the `main.m`. The saliency maps of the competitors are provided ([Google drive](https://drive.google.com/open?id=1JiIKySc3-Iw1234123foUhNW7qNul9T3pfkqnYu)).
+We provide the evaluation code in the folder  "eval_code" for fair comparisons. You may need to revise the `algorithms` , `data_root`, and `maps_root` defined in the `main.m`. 
