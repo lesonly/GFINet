@@ -407,6 +407,8 @@ class GFINet(nn.Module):
         out3_f = torch.cat((out3, out2_coarse * F.sigmoid(out3), (1 - F.sigmoid(out2_coarse)) * out3), dim=1)
         out3_f = F.relu(self.bn(self.conv_f(out3_f)))
         out3_f = self.bn(self.conv_s(out3_f))
+        out3_f = F.sigmoid(out3_f)
+        out3 = out3 + out3 * out3_f
         out3 = self.conv_t(out3)
 
         out4_f = torch.cat((out4, out2_coarse * F.sigmoid(out4), (1 - F.sigmoid(out2_coarse)) * out4), dim=1)
