@@ -428,7 +428,7 @@ class GFINet(nn.Module):
         return out2, out3, out4, out5, out2_coarse  # , out3_coarse, out4_coarse, out5_coarse
 
     def initialize(self):
-        if self.cfg.snapshot:  # 监控snapshot状态
+        if self.cfg.snapshot:  
             try:
                 self.load_state_dict(torch.load(self.cfg.snapshot))
             except:
@@ -437,12 +437,3 @@ class GFINet(nn.Module):
         else:
             weight_init(self)
 
-
-if __name__ == "__main__":
-    cfg = dataset.Config(datapath='E:\\GCPANet-master\\data\\DUTS', mode='train', batch=8, lr=0.05,
-                         momen=0.9,
-                         decay=5e-4, epoch=30)
-    x = torch.randn([2, 3, 288, 288])
-    net = GCPANet(cfg)
-    out2, out3, out4, out5, edge = net(x)
-    print(out2)
