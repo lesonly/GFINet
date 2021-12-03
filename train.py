@@ -13,7 +13,6 @@ from data2 import dataset
 from net import GFINet
 import logging as logger
 from lib2.data_prefetcher import DataPrefetcher
-from lib2.lr_finder import LRFinder
 import numpy as np
 import matplotlib.pyplot as plt
 import pytorch_iou2
