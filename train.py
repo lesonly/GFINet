@@ -50,7 +50,7 @@ def get_triangle_lr(base_lr, max_lr, total_steps, cur, ratio=1., \
 
 BASE_LR = 1e-3
 MAX_LR = 0.1
-FIND_LR = False #True
+
 
 # ------- 1. define loss function --------
 
@@ -81,14 +81,8 @@ def train(Dataset, Network):
             head.append(param)
     optimizer   = torch.optim.SGD([{'params':base}, {'params':head}], lr=cfg.lr, momentum=cfg.momen, weight_decay=cfg.decay, nesterov=True)
     global_step = 0
-
     db_size = len(loader)
-    if FIND_LR:
-        lr_finder = LRFinder(net, optimizer, criterion=None)
-        lr_finder.range_test(loader, end_lr=50, num_iter=100, step_mode="exp")
-        plt.ion()
-        lr_finder.plot()
-        import pdb; pdb.set_trace()
+
     #training
     for epoch in range(cfg.epoch):
         prefetcher = DataPrefetcher(loader)
