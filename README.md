@@ -16,9 +16,14 @@ code：fv6m)) of ResNet-50 implemented in Pytorch if you want to train the netwo
 code：sfx6)) in the folder of `dataset` for training or test.
 
 ## generate the thicker edge mask
-After preparing the data folder, you need to use the edge_mask.py to generate the thicker edge mask for training. Run this command
+After preparing the data folder, you need to use the mask_edge.py to generate the thicker edge mask for training. Run this command
 ```
-python edge_mask.py
+python data2/mask_edge.py
+```
+## generate the dilated mask
+After preparing the data folder, you need to use the mask_edge.py to generate the dilated mask for training. Run this command
+```
+python data2/mask_regione.py
 ```
 
 ## training
