@@ -15,10 +15,10 @@ def erosion_img(img,a,iterations):
 def nothing(pos):
     pass
 
-with open('E:\\GCPANet-master\\data\\DUTS\\train.txt', 'r') as lines:
+with open('E:\\GFINet-master\\data\\DUTS\\train.txt', 'r') as lines:
     samples = []
     for line in lines:
-        maskpath  = 'E:\\GCPANet-master\\data\\DUTS\\mask\\'  + line.strip() + '.png'
+        maskpath  = 'E:\\GFINet-master\\data\\DUTS\\mask\\'  + line.strip() + '.png'
    
         img = cv2.imread(maskpath,1)
 
@@ -28,6 +28,4 @@ with open('E:\\GCPANet-master\\data\\DUTS\\train.txt', 'r') as lines:
         is1 = dilated-img
         is2=img-erosion
         intersec=is1+is2
-        # 绑定 img 和 dilated
-
-        cv2.imwrite('E:\\GCPANet-master\\data\\DUTS\\mask_region\\'+ line.strip() + '.png',intersec)
+        cv2.imwrite('E:\\GFINet-master\\data\\DUTS\\mask_region\\'+ line.strip() + '.png',intersec)
