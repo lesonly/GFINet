@@ -51,20 +51,19 @@ We provide the evaluation code in the folder  "eval_code" for fair comparisons. 
 ## Citation
 We really hope this repo can contribute the conmunity, and if you find this work useful, please use the following citation:
 
-@article{DBLP:journals/tnn/ZhuLG23,
-  author       = {Ge Zhu and
-                  Jinbao Li and
-                  Yahong Guo},
-  title        = {Supplement and Suppression: Both Boundary and Nonboundary Are Helpful
-                  for Salient Object Detection},
-  journal      = {{IEEE} Trans. Neural Networks Learn. Syst.},
-  volume       = {34},
-  number       = {9},
-  pages        = {6615--6627},
-  year         = {2023},
-  url          = {https://doi.org/10.1109/TNNLS.2021.3127959},
-  doi          = {10.1109/TNNLS.2021.3127959},
-  timestamp    = {Sun, 24 Sep 2023 15:45:36 +0200},
-  biburl       = {https://dblp.org/rec/journals/tnn/ZhuLG23.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
+@article{DBLP:journals/tnn/ZhuLG23, <br>
+  author       = {Ge Zhu and <br>
+                  Jinbao Li and <br>
+                  Yahong Guo}, <br>
+  title        = {Supplement and Suppression: Both Boundary and Nonboundary Are Helpful for Salient Object Detection}, <br>
+  journal      = {{IEEE} Trans. Neural Networks Learn. Syst.}, <br>
+  volume       = {34}, <br>
+  number       = {9}, <br>
+  pages        = {6615--6627}, <br>
+  year         = {2023}, <br>
+  url          = {https://doi.org/10.1109/TNNLS.2021.3127959}, <br>
+  doi          = {10.1109/TNNLS.2021.3127959}, <br>
+  timestamp    = {Sun, 24 Sep 2023 15:45:36 +0200}, <br>
+  biburl       = {https://dblp.org/rec/journals/tnn/ZhuLG23.bib}, <br>
+  bibsource    = {dblp computer science bibliography, https://dblp.org} <br>
 }
